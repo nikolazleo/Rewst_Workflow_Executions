@@ -1,0 +1,2371 @@
+{
+  "santabaRelease": 222,
+  "widgetTokens": [
+    {
+      "name": "logicModule",
+      "value": "Rewst_Workflow_Executions"
+    },
+    {
+      "name": "rewstDeviceName",
+      "value": "Device Name Missing"
+    }
+  ],
+  "name": "Rewst_Workflow_Executions",
+  "description": "",
+  "overwriteGroupFields": false,
+  "widgetsConfigVersion": 2,
+  "type": "dashboard",
+  "widgets": [
+    {
+      "position": {
+        "col": 1,
+        "sizex": 12,
+        "row": 20,
+        "sizey": 6
+      },
+      "config": {
+        "displaySettings": {
+          "isShowAll": true,
+          "showFilter": true,
+          "columns": [
+            {
+              "visible": false,
+              "columnLabel": "Severity",
+              "columnKey": "alert-severity"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Full Path",
+              "columnKey": "alert-full-path"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Began",
+              "columnKey": "alert-began"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Resource/Website",
+              "columnKey": "alert-device"
+            },
+            {
+              "visible": false,
+              "columnLabel": "LogicModule",
+              "columnKey": "alert-datasource"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Instance",
+              "columnKey": "alert-datasource-instance"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Datapoint",
+              "columnKey": "alert-datapoint"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Value",
+              "columnKey": "alert-value"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Static Threshold",
+              "columnKey": "alert-static-threshold"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dynamic Threshold",
+              "columnKey": "alert-dynamic-threshold"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Group",
+              "columnKey": "alert-group"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Notes",
+              "columnKey": "alert-notes"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Acknowledged By",
+              "columnKey": "alert-acked-by"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Acknowledged On",
+              "columnKey": "alert-acked-on"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Cleared On",
+              "columnKey": "alert-cleared-on"
+            },
+            {
+              "visible": true,
+              "columnLabel": "In SDT",
+              "columnKey": "alert-in-sdt"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Alert Rule",
+              "columnKey": "alert-rule-name"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Escalation Chain",
+              "columnKey": "alert-escalation-chain"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Instance Description",
+              "columnKey": "alert-datasource-instance-description"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Routing State",
+              "columnKey": "alert-routing-state"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dependency Role",
+              "columnKey": "alert-dependency-role"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dependent Alerts Count",
+              "columnSize": 120,
+              "columnKey": "alert-dependent-alerts"
+            }
+          ],
+          "playSound": {
+            "criticalAlertAudioFileName": "",
+            "errorAlertAudioFileName": "",
+            "warningAlertAudioFileName": "",
+            "shouldPlay": false
+          },
+          "fontsize": "normal-font",
+          "sort": "instanceName"
+        },
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - ##logicModule## - Ack'd Alerts",
+        "description": "",
+        "theme": "solidPurple",
+        "interval": 1,
+        "filters": {
+          "severity": "",
+          "sdted": "all",
+          "chain": "",
+          "instance": "",
+          "anomaly": "",
+          "dataPoint": "",
+          "rule": "",
+          "acked": "yes",
+          "dependencyRoutingState": "",
+          "dependencyRole": "",
+          "host": "%23%23rewstDeviceName%23%23",
+          "keyword": "",
+          "dataSource": "Rewst_Workflow_Executions",
+          "cleared": "no",
+          "group": ""
+        },
+        "type": "alert",
+        "timescale": "day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 12,
+        "row": 31,
+        "sizey": 5
+      },
+      "config": {
+        "displaySettings": {
+          "isShowAll": true,
+          "showFilter": true,
+          "columns": [
+            {
+              "visible": false,
+              "columnLabel": "Severity",
+              "columnKey": "alert-severity"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Full Path",
+              "columnKey": "alert-full-path"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Began",
+              "columnSize": 220,
+              "columnKey": "alert-began"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Resource/Website",
+              "columnKey": "alert-device"
+            },
+            {
+              "visible": false,
+              "columnLabel": "LogicModule",
+              "columnKey": "alert-datasource"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Instance Description",
+              "columnSize": 126,
+              "columnKey": "alert-datasource-instance-description"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Instance",
+              "columnSize": 395,
+              "columnKey": "alert-datasource-instance"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Datapoint",
+              "columnSize": 70,
+              "columnKey": "alert-datapoint"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Value",
+              "columnSize": 120,
+              "columnKey": "alert-value"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Static Threshold",
+              "columnKey": "alert-static-threshold"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dynamic Threshold",
+              "columnKey": "alert-dynamic-threshold"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Group",
+              "columnKey": "alert-group"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Notes",
+              "columnSize": 49,
+              "columnKey": "alert-notes"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Acknowledged By",
+              "columnSize": 120,
+              "columnKey": "alert-acked-by"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Acknowledged On",
+              "columnSize": 120,
+              "columnKey": "alert-acked-on"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Cleared On",
+              "columnSize": 509,
+              "columnKey": "alert-cleared-on"
+            },
+            {
+              "visible": false,
+              "columnLabel": "In SDT",
+              "columnKey": "alert-in-sdt"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Alert Rule",
+              "columnKey": "alert-rule-name"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Escalation Chain",
+              "columnKey": "alert-escalation-chain"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Routing State",
+              "columnKey": "alert-routing-state"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dependency Role",
+              "columnKey": "alert-dependency-role"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dependent Alerts Count",
+              "columnSize": 120,
+              "columnKey": "alert-dependent-alerts"
+            }
+          ],
+          "playSound": {
+            "criticalAlertAudioFileName": "",
+            "errorAlertAudioFileName": "",
+            "warningAlertAudioFileName": "",
+            "shouldPlay": false
+          },
+          "fontsize": "normal-font",
+          "sort": "instanceName"
+        },
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - ##logicModule## - Cleared Alerts",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "filters": {
+          "severity": "",
+          "sdted": "all",
+          "chain": "",
+          "instance": "",
+          "anomaly": "all",
+          "dataPoint": "",
+          "rule": "",
+          "acked": "all",
+          "dependencyRoutingState": "",
+          "dependencyRole": "",
+          "host": "%23%23rewstDeviceName%23%23",
+          "keyword": "",
+          "dataSource": "Rewst_Workflow_Executions",
+          "cleared": "yes",
+          "group": ""
+        },
+        "type": "alert",
+        "timescale": "day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 12,
+        "row": 14,
+        "sizey": 6
+      },
+      "config": {
+        "displaySettings": {
+          "isShowAll": true,
+          "showFilter": true,
+          "columns": [
+            {
+              "visible": false,
+              "columnLabel": "Severity",
+              "columnKey": "alert-severity"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Full Path",
+              "columnKey": "alert-full-path"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Began",
+              "columnKey": "alert-began"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Resource/Website",
+              "columnKey": "alert-device"
+            },
+            {
+              "visible": true,
+              "columnLabel": "LogicModule",
+              "columnKey": "alert-datasource"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Instance",
+              "columnKey": "alert-datasource-instance"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Datapoint",
+              "columnKey": "alert-datapoint"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Value",
+              "columnKey": "alert-value"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Static Threshold",
+              "columnKey": "alert-static-threshold"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Dynamic Threshold",
+              "columnKey": "alert-dynamic-threshold"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Group",
+              "columnKey": "alert-group"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Notes",
+              "columnKey": "alert-notes"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Acknowledged By",
+              "columnKey": "alert-acked-by"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Acknowledged On",
+              "columnKey": "alert-acked-on"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Cleared On",
+              "columnKey": "alert-cleared-on"
+            },
+            {
+              "visible": true,
+              "columnLabel": "In SDT",
+              "columnKey": "alert-in-sdt"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Alert Rule",
+              "columnKey": "alert-rule-name"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Escalation Chain",
+              "columnKey": "alert-escalation-chain"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Instance Description",
+              "columnKey": "alert-datasource-instance-description"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Routing State",
+              "columnKey": "alert-routing-state"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dependency Role",
+              "columnKey": "alert-dependency-role"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dependent Alerts Count",
+              "columnSize": 120,
+              "componentName": "Body1",
+              "columnKey": "alert-dependent-alerts",
+              "dataPath": ["dependentAlertsCount"]
+            }
+          ],
+          "playSound": {
+            "criticalAlertAudioFileName": "",
+            "errorAlertAudioFileName": "",
+            "warningAlertAudioFileName": "",
+            "shouldPlay": false
+          },
+          "fontsize": "normal-font",
+          "sort": "instanceName"
+        },
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - ##logicModule## - Workflow Alerts",
+        "description": "",
+        "theme": "solidPurple",
+        "interval": 1,
+        "filters": {
+          "severity": "",
+          "sdted": "no",
+          "chain": "",
+          "instance": "",
+          "anomaly": "",
+          "dataPoint": "",
+          "rule": "",
+          "acked": "no",
+          "dependencyRoutingState": "",
+          "dependencyRole": "",
+          "host": "%23%23rewstDeviceName%23%23",
+          "keyword": "",
+          "dataSource": "Rewst_Workflow_Executions",
+          "cleared": "no",
+          "group": ""
+        },
+        "type": "alert",
+        "timescale": "day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 12,
+        "row": 1,
+        "sizey": 5
+      },
+      "config": {
+        "ackChecked": true,
+        "displaySettings": {
+          "showTypeIcon": true,
+          "displayAs": "table"
+        },
+        "displayWarnAlert": true,
+        "supportCustomProperty": false,
+        "description": "",
+        "type": "noc",
+        "version": 2,
+        "displayErrorAlert": true,
+        "isSupportCustomProperty": false,
+        "displayColumn": 9,
+        "name": "##rewstDeviceName## - ##logicModule## - Workflow Instances",
+        "displayCriticalAlert": true,
+        "theme": "newSolidDarkBlue",
+        "interval": 3,
+        "sortBy": "alertSeverity",
+        "timescale": "day",
+        "sdtChecked": true,
+        "items": [{
+          "dataPointName": "failure",
+          "instanceName": "*",
+          "name": "##INSTANCE##",
+          "dataSourceDisplayName": "Rewst_Workflow_Executions",
+          "groupBy": "instance",
+          "type": "device",
+          "deviceGroupFullPath": "*",
+          "deviceDisplayName": "##rewstDeviceName##"
+        }]
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 12,
+        "row": 26,
+        "sizey": 5
+      },
+      "config": {
+        "displaySettings": {
+          "isShowAll": true,
+          "showFilter": true,
+          "columns": [
+            {
+              "visible": false,
+              "columnLabel": "Severity",
+              "columnKey": "alert-severity"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Began",
+              "columnSize": 220,
+              "columnKey": "alert-began"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Datapoint",
+              "columnSize": 200,
+              "columnKey": "alert-datapoint"
+            },
+            {
+              "visible": true,
+              "isDynamic": true,
+              "columnLabel": "Log Metadata",
+              "columnSize": 1311,
+              "columnKey": "alert-log-metadata"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Notes",
+              "columnKey": "alert-notes"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Value",
+              "columnKey": "alert-value"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.type",
+              "columnKey": "auto_rewst_type"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.updatedby",
+              "columnKey": "auto_rewst_updatedby"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.createdby",
+              "columnKey": "auto_rewst_createdby"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.unpacked_from.name",
+              "columnKey": "auto_rewst_unpacked_from_name"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Cleared On",
+              "columnKey": "alert-cleared-on"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.unpacked_from.maturity",
+              "columnKey": "auto_rewst_unpacked_from_maturity"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.tags.name",
+              "columnKey": "auto_rewst_tags_name"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Instance",
+              "columnKey": "alert-datasource-instance"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Resource/Website",
+              "columnKey": "alert-device"
+            },
+            {
+              "visible": false,
+              "columnLabel": "LogicModule",
+              "columnKey": "alert-datasource"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Static Threshold",
+              "columnKey": "alert-static-threshold"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dynamic Threshold",
+              "columnKey": "alert-dynamic-threshold"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Group",
+              "columnKey": "alert-group"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Acknowledged By",
+              "columnKey": "alert-acked-by"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Acknowledged On",
+              "columnKey": "alert-acked-on"
+            },
+            {
+              "visible": false,
+              "columnLabel": "In SDT",
+              "columnKey": "alert-in-sdt"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Alert Rule",
+              "columnKey": "alert-rule-name"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Escalation Chain",
+              "columnKey": "alert-escalation-chain"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Instance Description",
+              "columnKey": "alert-datasource-instance-description"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Full Path",
+              "columnKey": "alert-full-path"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Routing State",
+              "columnKey": "alert-routing-state"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dependency Role",
+              "columnKey": "alert-dependency-role"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "Alert Grouping Criteria",
+              "columnKey": "alert-grouping-criteria"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "ServiceNow incident",
+              "columnKey": "alert-external-ticket-url"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dependent Alerts Count",
+              "columnSize": 120,
+              "columnKey": "alert-dependent-alerts"
+            }
+          ],
+          "playSound": {
+            "criticalAlertAudioFileName": "",
+            "errorAlertAudioFileName": "",
+            "warningAlertAudioFileName": "",
+            "shouldPlay": false
+          },
+          "fontsize": "normal-font",
+          "sort": "instanceName"
+        },
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - LMLogs - Cleared Alerts",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "filters": {
+          "severity": "",
+          "sdted": "all",
+          "chain": "",
+          "instance": "",
+          "anomaly": "all",
+          "dataPoint": "Rewst%20-%20Workflow*",
+          "rule": "",
+          "acked": "all",
+          "dependencyRoutingState": "",
+          "dependencyRole": "",
+          "host": "%23%23rewstDeviceName%23%23",
+          "keyword": "",
+          "dataSource": "LM%20Logs",
+          "cleared": "yes",
+          "group": ""
+        },
+        "type": "alert",
+        "timescale": "day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 12,
+        "row": 8,
+        "sizey": 6
+      },
+      "config": {
+        "displaySettings": {
+          "isShowAll": true,
+          "showFilter": true,
+          "columns": [
+            {
+              "visible": true,
+              "columnLabel": "Began",
+              "columnSize": 150,
+              "columnKey": "alert-began"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Severity",
+              "columnKey": "alert-severity"
+            },
+            {
+              "visible": true,
+              "columnLabel": "Datapoint",
+              "columnSize": 260,
+              "columnKey": "alert-datapoint"
+            },
+            {
+              "visible": true,
+              "isDynamic": true,
+              "columnLabel": "Log Metadata",
+              "columnSize": 1336,
+              "columnKey": "alert-log-metadata"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Notes",
+              "columnKey": "alert-notes"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Value",
+              "columnKey": "alert-value"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.type",
+              "columnKey": "auto_rewst_type"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.updatedby",
+              "columnKey": "auto_rewst_updatedby"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.createdby",
+              "columnKey": "auto_rewst_createdby"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.unpacked_from.name",
+              "columnKey": "auto_rewst_unpacked_from_name"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Cleared On",
+              "columnKey": "alert-cleared-on"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.unpacked_from.maturity",
+              "columnKey": "auto_rewst_unpacked_from_maturity"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "auto.rewst.tags.name",
+              "columnKey": "auto_rewst_tags_name"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Instance",
+              "columnKey": "alert-datasource-instance"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Resource/Website",
+              "columnKey": "alert-device"
+            },
+            {
+              "visible": false,
+              "columnLabel": "LogicModule",
+              "columnKey": "alert-datasource"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Static Threshold",
+              "columnKey": "alert-static-threshold"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dynamic Threshold",
+              "columnKey": "alert-dynamic-threshold"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Group",
+              "columnKey": "alert-group"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Acknowledged By",
+              "columnKey": "alert-acked-by"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Acknowledged On",
+              "columnKey": "alert-acked-on"
+            },
+            {
+              "visible": false,
+              "columnLabel": "In SDT",
+              "columnKey": "alert-in-sdt"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Alert Rule",
+              "columnKey": "alert-rule-name"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Escalation Chain",
+              "columnKey": "alert-escalation-chain"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Instance Description",
+              "columnKey": "alert-datasource-instance-description"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Full Path",
+              "columnKey": "alert-full-path"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Routing State",
+              "columnKey": "alert-routing-state"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dependency Role",
+              "columnKey": "alert-dependency-role"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "Alert Grouping Criteria",
+              "columnKey": "alert-grouping-criteria"
+            },
+            {
+              "visible": false,
+              "isDynamic": true,
+              "columnLabel": "ServiceNow incident",
+              "columnKey": "alert-external-ticket-url"
+            },
+            {
+              "visible": false,
+              "columnLabel": "Dependent Alerts Count",
+              "columnSize": 120,
+              "columnKey": "alert-dependent-alerts"
+            }
+          ],
+          "playSound": {
+            "criticalAlertAudioFileName": "",
+            "errorAlertAudioFileName": "",
+            "warningAlertAudioFileName": "",
+            "shouldPlay": false
+          },
+          "fontsize": "normal-font",
+          "sort": "instanceName"
+        },
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - LMLogs - Execution Alerts",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "filters": {
+          "severity": "",
+          "sdted": "all",
+          "chain": "",
+          "instance": "",
+          "anomaly": "all",
+          "dataPoint": "Rewst%20-%20Workflow*",
+          "rule": "",
+          "acked": "no",
+          "dependencyRoutingState": "",
+          "dependencyRole": "",
+          "host": "%23%23rewstDeviceName%23%23",
+          "keyword": "",
+          "dataSource": "LM%20Logs",
+          "cleared": "no",
+          "group": ""
+        },
+        "type": "alert",
+        "timescale": "day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 4,
+        "row": 36,
+        "sizey": 4
+      },
+      "config": {
+        "bigNumberInfo": {
+          "virtualDataPoints": [{
+            "rpn": "seconds_saved / 60 / 60",
+            "name": "hours"
+          }],
+          "counters": [],
+          "dataPoints": [
+            {
+              "dataPointName": "success",
+              "instanceName": "*",
+              "dataSourceFullName": "Rewst_Workflow_Executions",
+              "name": "success",
+              "aggregateFunction": "SUM",
+              "deviceGroupFullPath": "*",
+              "deviceDisplayName": "##rewstDeviceName##"
+            },
+            {
+              "dataPointName": "failure",
+              "instanceName": "*",
+              "dataSourceFullName": "Rewst_Workflow_Executions",
+              "name": "failure",
+              "aggregateFunction": "SUM",
+              "deviceGroupFullPath": "*",
+              "deviceDisplayName": "##rewstDeviceName##"
+            },
+            {
+              "dataPointName": "seconds_saved",
+              "instanceName": "*",
+              "dataSourceFullName": "Rewst_Workflow_Executions",
+              "name": "seconds_saved",
+              "aggregateFunction": "SUM",
+              "deviceGroupFullPath": "*",
+              "deviceDisplayName": "##rewstDeviceName##"
+            }
+          ],
+          "bigNumberItems": [
+            {
+              "dataPointName": "success",
+              "useCommaSeparators": true,
+              "bottomLabel": "Executions",
+              "rounding": 0,
+              "position": 1,
+              "rightLabel": "Successful",
+              "colorThresholds": [
+                {
+                  "level": 2,
+                  "threshold": 0,
+                  "relation": "="
+                },
+                {
+                  "level": 3,
+                  "threshold": 0,
+                  "relation": "="
+                },
+                {
+                  "level": 4,
+                  "threshold": 0,
+                  "relation": "="
+                }
+              ],
+              "actions": []
+            },
+            {
+              "dataPointName": "failure",
+              "useCommaSeparators": true,
+              "bottomLabel": "Executions",
+              "rounding": 0,
+              "position": 2,
+              "rightLabel": "Failed",
+              "colorThresholds": [
+                {
+                  "level": 2,
+                  "threshold": 0,
+                  "relation": "!="
+                },
+                {
+                  "level": 3,
+                  "threshold": 0,
+                  "relation": "!="
+                },
+                {
+                  "level": 4,
+                  "threshold": 0,
+                  "relation": "!="
+                }
+              ],
+              "actions": []
+            }
+          ]
+        },
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Real Time - Execution Metrics",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "type": "bigNumber",
+        "timescale": "day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 9,
+        "sizex": 4,
+        "row": 36,
+        "sizey": 4
+      },
+      "config": {
+        "bigNumberInfo": {
+          "virtualDataPoints": [],
+          "counters": [],
+          "dataPoints": [
+            {
+              "dataPointName": "running",
+              "instanceName": "*",
+              "dataSourceFullName": "Rewst_Workflow_Executions",
+              "name": "running",
+              "aggregateFunction": "SUM",
+              "deviceGroupFullPath": "*",
+              "deviceDisplayName": "##rewstDeviceName##"
+            },
+            {
+              "dataPointName": "canceled",
+              "instanceName": "*",
+              "dataSourceFullName": "Rewst_Workflow_Executions",
+              "name": "canceled",
+              "aggregateFunction": "SUM",
+              "deviceGroupFullPath": "*",
+              "deviceDisplayName": "##rewstDeviceName##"
+            },
+            {
+              "dataPointName": "unknown",
+              "instanceName": "*",
+              "dataSourceFullName": "Rewst_Workflow_Executions",
+              "name": "unknown",
+              "aggregateFunction": "SUM",
+              "deviceGroupFullPath": "*",
+              "deviceDisplayName": "##rewstDeviceName##"
+            }
+          ],
+          "bigNumberItems": [
+            {
+              "dataPointName": "running",
+              "useCommaSeparators": false,
+              "bottomLabel": "Executions",
+              "rounding": 0,
+              "position": 1,
+              "rightLabel": "Running",
+              "colorThresholds": [
+                {
+                  "level": 2,
+                  "threshold": 300,
+                  "relation": ">"
+                },
+                {
+                  "level": 3,
+                  "threshold": 500,
+                  "relation": ">"
+                },
+                {
+                  "level": 4,
+                  "threshold": 0,
+                  "relation": "="
+                }
+              ],
+              "actions": []
+            },
+            {
+              "dataPointName": "canceled",
+              "useCommaSeparators": false,
+              "bottomLabel": "Executions",
+              "rounding": 0,
+              "position": 2,
+              "rightLabel": "Canceled",
+              "colorThresholds": [
+                {
+                  "level": 2,
+                  "threshold": 0,
+                  "relation": ">"
+                },
+                {
+                  "level": 3,
+                  "threshold": 0,
+                  "relation": ">"
+                },
+                {
+                  "level": 4,
+                  "threshold": 0,
+                  "relation": ">"
+                }
+              ],
+              "actions": []
+            },
+            {
+              "dataPointName": "unknown",
+              "useCommaSeparators": false,
+              "bottomLabel": "Executions",
+              "rounding": 0,
+              "position": 3,
+              "rightLabel": "Unknown",
+              "colorThresholds": [
+                {
+                  "level": 2,
+                  "threshold": 0,
+                  "relation": ">"
+                },
+                {
+                  "level": 3,
+                  "threshold": 0,
+                  "relation": ">"
+                },
+                {
+                  "level": 4,
+                  "threshold": 0,
+                  "relation": ">"
+                }
+              ],
+              "actions": []
+            }
+          ]
+        },
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Real Time - Execution Metrics",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "type": "bigNumber",
+        "timescale": "day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 5,
+        "sizex": 4,
+        "row": 36,
+        "sizey": 4
+      },
+      "config": {
+        "displaySettings": {},
+        "timezone": "America/Chicago",
+        "supportCustomProperty": false,
+        "description": "",
+        "type": "deviceSLA",
+        "version": 2,
+        "calculationMethod": 1,
+        "daysInWeek": "1,2,3,4,5,6,7",
+        "displayType": 1,
+        "isSupportCustomProperty": false,
+        "topX": 1,
+        "bottomLabel": "Time Available",
+        "name": "##rewstDeviceName## - Real Time - Execution Success Percentage",
+        "displayPercentageBar": false,
+        "periodInOneDay": "*",
+        "theme": "newSolidDarkBlue",
+        "interval": 5,
+        "metrics": [{
+          "groupName": "*",
+          "instances": "*",
+          "metric": "failure",
+          "dataSourceFullName": "Rewst_Workflow_Executions",
+          "bottomLabel": "Workflow",
+          "threshold": "= 0",
+          "deviceName": "##rewstDeviceName##",
+          "exclusionSDTType": ""
+        }],
+        "timescale": "Last hour",
+        "unmonitoredTimeType": 0,
+        "colorThresholds": [
+          {
+            "level": 2,
+            "threshold": 100,
+            "relation": "!="
+          },
+          {
+            "level": 3,
+            "threshold": 100,
+            "relation": "!="
+          },
+          {
+            "level": 4,
+            "threshold": 100,
+            "relation": "!="
+          }
+        ]
+      }
+    },
+    {
+      "position": {
+        "col": 7,
+        "sizex": 6,
+        "row": 53,
+        "sizey": 4
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - Failed Executions By Workflow",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "graphInfo": {
+          "virtualDataPoints": [],
+          "minValue": 0,
+          "topX": 100,
+          "maxValue": "NaN",
+          "dataPoints": [{
+            "dataPointName": "failure",
+            "instanceName": {
+              "isGlob": true,
+              "value": "*"
+            },
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "consolidateFunction": "max",
+            "display": {
+              "color": "Auto",
+              "legend": "##INSTANCE##",
+              "type": "stack",
+              "option": "custom"
+            },
+            "name": "workflow_failure",
+            "aggregateFunction": "SUM",
+            "deviceDisplayName": {
+              "isGlob": true,
+              "value": "##rewstDeviceName##"
+            },
+            "deviceGroupFullPath": {
+              "isGlob": true,
+              "value": "*"
+            }
+          }],
+          "verticalLabel": "Executions",
+          "aggregate": false,
+          "desc": true,
+          "scaleUnit": 1000,
+          "globalConsolidateFunction": "default"
+        },
+        "type": "cgraph",
+        "timescale": "1day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 7,
+        "sizex": 6,
+        "row": 75,
+        "sizey": 4
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - Hours Saved By Workflow",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "graphInfo": {
+          "virtualDataPoints": [{
+            "rpn": "workflow_seconds_saved / 60 / 60",
+            "display": {
+              "color": "Auto",
+              "legend": "##INSTANCE##",
+              "type": "stack",
+              "option": "custom"
+            },
+            "name": "hours_saved"
+          }],
+          "minValue": 0,
+          "topX": 25,
+          "maxValue": "NaN",
+          "dataPoints": [{
+            "dataPointName": "seconds_saved",
+            "instanceName": {
+              "isGlob": true,
+              "value": "*"
+            },
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "consolidateFunction": "average",
+            "display": {
+              "color": null,
+              "legend": null,
+              "type": "line",
+              "option": "none"
+            },
+            "name": "workflow_seconds_saved",
+            "aggregateFunction": "SUM",
+            "deviceDisplayName": {
+              "isGlob": true,
+              "value": "##rewstDeviceName##"
+            },
+            "deviceGroupFullPath": {
+              "isGlob": true,
+              "value": "*"
+            }
+          }],
+          "verticalLabel": "hours",
+          "aggregate": false,
+          "desc": true,
+          "scaleUnit": 1000,
+          "globalConsolidateFunction": "default"
+        },
+        "type": "cgraph",
+        "timescale": "1day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 12,
+        "row": 79,
+        "sizey": 4
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - Hours Saved Total",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "graphInfo": {
+          "virtualDataPoints": [{
+            "rpn": "seconds_saved / 60 / 60",
+            "display": {
+              "color": "Auto",
+              "legend": "hours",
+              "type": "area",
+              "option": "custom"
+            },
+            "name": "hours"
+          }],
+          "minValue": 0,
+          "topX": 0,
+          "maxValue": "NaN",
+          "dataPoints": [{
+            "dataPointName": "seconds_saved",
+            "instanceName": {
+              "isGlob": true,
+              "value": "*"
+            },
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "consolidateFunction": "average",
+            "display": {
+              "color": null,
+              "legend": null,
+              "type": "line",
+              "option": "none"
+            },
+            "name": "seconds_saved",
+            "aggregateFunction": "SUM",
+            "deviceDisplayName": {
+              "isGlob": true,
+              "value": "##rewstDeviceName##"
+            },
+            "deviceGroupFullPath": {
+              "isGlob": true,
+              "value": "*"
+            }
+          }],
+          "verticalLabel": "hours",
+          "aggregate": true,
+          "desc": true,
+          "scaleUnit": 1000,
+          "globalConsolidateFunction": "default"
+        },
+        "type": "cgraph",
+        "timescale": "1day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 6,
+        "row": 40,
+        "sizey": 4
+      },
+      "config": {
+        "displaySettings": {},
+        "timezone": "America/Chicago",
+        "supportCustomProperty": false,
+        "description": "Percent of time the workflow running value = 0",
+        "type": "deviceSLA",
+        "version": 2,
+        "calculationMethod": 1,
+        "daysInWeek": "1,2,3,4,5,6,7",
+        "displayType": 2,
+        "isSupportCustomProperty": false,
+        "topX": 50,
+        "bottomLabel": "Workflow Success",
+        "name": "##rewstDeviceName## - Time Range - Idle Execution Percentage By Workflow",
+        "displayPercentageBar": true,
+        "periodInOneDay": "*",
+        "theme": "newSolidDarkBlue",
+        "interval": 5,
+        "metrics": [{
+          "groupName": "*",
+          "instances": "*",
+          "metric": "success",
+          "dataSourceFullName": "Rewst_Workflow_Executions",
+          "bottomLabel": "##INSTANCE##",
+          "threshold": "= 0",
+          "deviceName": "##rewstDeviceName##",
+          "exclusionSDTType": ""
+        }],
+        "timescale": "Last 2 hours",
+        "unmonitoredTimeType": 0,
+        "colorThresholds": [
+          {
+            "level": 2,
+            "threshold": 101,
+            "relation": ">"
+          },
+          {
+            "level": 3,
+            "threshold": 1,
+            "relation": "<"
+          },
+          {
+            "level": 4,
+            "threshold": 0.02,
+            "relation": "<"
+          }
+        ]
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 6,
+        "row": 47,
+        "sizey": 3
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - LogicModule ResponseTime",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 3,
+        "graphInfo": {
+          "virtualDataPoints": [],
+          "minValue": 0,
+          "topX": 0,
+          "maxValue": "NaN",
+          "dataPoints": [
+            {
+              "dataPointName": "responseTime",
+              "instanceName": {
+                "isGlob": true,
+                "value": "*"
+              },
+              "dataSourceFullName": "Rewst_Workflow_Executions",
+              "consolidateFunction": "max",
+              "display": {
+                "color": "red1",
+                "legend": "LogicModule_ResponseTime",
+                "type": "stack",
+                "option": "custom"
+              },
+              "name": "LogicModule_ResponseTime",
+              "aggregateFunction": "MAX",
+              "deviceDisplayName": {
+                "isGlob": true,
+                "value": "##rewstDeviceName##"
+              },
+              "deviceGroupFullPath": {
+                "isGlob": true,
+                "value": "*"
+              }
+            },
+            {
+              "dataPointName": "ResponseTime",
+              "instanceName": {
+                "isGlob": true,
+                "value": "*"
+              },
+              "dataSourceFullName": "HTTPS",
+              "consolidateFunction": "max",
+              "display": {
+                "color": "orange",
+                "legend": "https_ResponseTime",
+                "type": "stack",
+                "option": "custom"
+              },
+              "name": "https_ResponseTime",
+              "aggregateFunction": "MAX",
+              "deviceDisplayName": {
+                "isGlob": true,
+                "value": "##rewstDeviceName##"
+              },
+              "deviceGroupFullPath": {
+                "isGlob": true,
+                "value": "*"
+              }
+            },
+            {
+              "dataPointName": "ResponseTime",
+              "instanceName": {
+                "isGlob": false,
+                "value": "80"
+              },
+              "dataSourceFullName": "HTTP (HTTP-)",
+              "consolidateFunction": "max",
+              "display": {
+                "color": "yellow",
+                "legend": "http_ResponseTime",
+                "type": "stack",
+                "option": "custom"
+              },
+              "name": "http_ResponseTime",
+              "aggregateFunction": "MAX",
+              "deviceDisplayName": {
+                "isGlob": true,
+                "value": "##rewstDeviceName##"
+              },
+              "deviceGroupFullPath": {
+                "isGlob": true,
+                "value": "*"
+              }
+            }
+          ],
+          "verticalLabel": "ms",
+          "aggregate": true,
+          "desc": true,
+          "scaleUnit": 1000,
+          "globalConsolidateFunction": "VaST"
+        },
+        "type": "cgraph",
+        "timescale": "1day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 6,
+        "row": 75,
+        "sizey": 4
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - Minutes Saved By Workflow",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "graphInfo": {
+          "virtualDataPoints": [{
+            "rpn": "workflow_seconds_saved / 60",
+            "display": {
+              "color": "Auto",
+              "legend": "##INSTANCE##",
+              "type": "stack",
+              "option": "custom"
+            },
+            "name": "workflow_minutes_saved"
+          }],
+          "minValue": 0,
+          "topX": 25,
+          "maxValue": "NaN",
+          "dataPoints": [{
+            "dataPointName": "seconds_saved",
+            "instanceName": {
+              "isGlob": true,
+              "value": "*"
+            },
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "consolidateFunction": "average",
+            "display": {
+              "color": null,
+              "legend": null,
+              "type": "line",
+              "option": "none"
+            },
+            "name": "workflow_seconds_saved",
+            "aggregateFunction": "SUM",
+            "deviceDisplayName": {
+              "isGlob": true,
+              "value": "##rewstDeviceName##"
+            },
+            "deviceGroupFullPath": {
+              "isGlob": true,
+              "value": "*"
+            }
+          }],
+          "verticalLabel": "minutes",
+          "aggregate": false,
+          "desc": true,
+          "scaleUnit": 1000,
+          "globalConsolidateFunction": "default"
+        },
+        "type": "cgraph",
+        "timescale": "1day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 6,
+        "row": 53,
+        "sizey": 4
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - Running Executions By Workflow",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "graphInfo": {
+          "virtualDataPoints": [],
+          "minValue": 0,
+          "topX": 100,
+          "maxValue": "NaN",
+          "dataPoints": [{
+            "dataPointName": "running",
+            "instanceName": {
+              "isGlob": true,
+              "value": "*"
+            },
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "consolidateFunction": "max",
+            "display": {
+              "color": "Auto",
+              "legend": "##INSTANCE##",
+              "type": "stack",
+              "option": "custom"
+            },
+            "name": "running",
+            "aggregateFunction": "SUM",
+            "deviceDisplayName": {
+              "isGlob": true,
+              "value": "##rewstDeviceName##"
+            },
+            "deviceGroupFullPath": {
+              "isGlob": true,
+              "value": "*"
+            }
+          }],
+          "verticalLabel": "Executions",
+          "aggregate": false,
+          "desc": true,
+          "scaleUnit": 1000,
+          "globalConsolidateFunction": "default"
+        },
+        "type": "cgraph",
+        "timescale": "1day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 7,
+        "sizex": 6,
+        "row": 40,
+        "sizey": 4
+      },
+      "config": {
+        "displaySettings": {},
+        "timezone": "America/Chicago",
+        "supportCustomProperty": false,
+        "description": "Percent of time the workflow failure value = 0",
+        "type": "deviceSLA",
+        "version": 2,
+        "calculationMethod": 1,
+        "daysInWeek": "1,2,3,4,5,6,7",
+        "displayType": 2,
+        "isSupportCustomProperty": false,
+        "topX": 50,
+        "bottomLabel": "Workflow Success",
+        "name": "##rewstDeviceName## - Time Range - Successful Execution Percentage By Workflow",
+        "displayPercentageBar": true,
+        "periodInOneDay": "*",
+        "theme": "newSolidDarkBlue",
+        "interval": 5,
+        "metrics": [{
+          "groupName": "*",
+          "instances": "*",
+          "metric": "failure",
+          "dataSourceFullName": "Rewst_Workflow_Executions",
+          "bottomLabel": "##INSTANCE##",
+          "threshold": "= 0",
+          "deviceName": "##rewstDeviceName##",
+          "exclusionSDTType": ""
+        }],
+        "timescale": "Last 2 hours",
+        "unmonitoredTimeType": 0,
+        "colorThresholds": [
+          {
+            "level": 2,
+            "threshold": 101,
+            "relation": ">"
+          },
+          {
+            "level": 3,
+            "threshold": 101,
+            "relation": ">"
+          },
+          {
+            "level": 4,
+            "threshold": 100,
+            "relation": "<"
+          }
+        ]
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 12,
+        "row": 50,
+        "sizey": 3
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - Successful Executions By Workflow",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "graphInfo": {
+          "virtualDataPoints": [],
+          "minValue": 0,
+          "topX": 100,
+          "maxValue": "NaN",
+          "dataPoints": [{
+            "dataPointName": "success",
+            "instanceName": {
+              "isGlob": true,
+              "value": "*"
+            },
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "consolidateFunction": "max",
+            "display": {
+              "color": "Auto",
+              "legend": "##INSTANCE##",
+              "type": "stack",
+              "option": "custom"
+            },
+            "name": "workflow_success",
+            "aggregateFunction": "SUM",
+            "deviceDisplayName": {
+              "isGlob": true,
+              "value": "##rewstDeviceName##"
+            },
+            "deviceGroupFullPath": {
+              "isGlob": true,
+              "value": "*"
+            }
+          }],
+          "verticalLabel": "Executions",
+          "aggregate": false,
+          "desc": true,
+          "scaleUnit": 1000,
+          "globalConsolidateFunction": "default"
+        },
+        "type": "cgraph",
+        "timescale": "1day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 12,
+        "row": 68,
+        "sizey": 7
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - Time Savings By Workflow",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "type": "pieChart",
+        "timescale": "day",
+        "pieChartInfo": {
+          "maxSlicesCanBeShown": 25,
+          "virtualDataPoints": [],
+          "showLabelsAndLinesOnPC": true,
+          "counters": [],
+          "dataPoints": [{
+            "dataPointName": "seconds_saved",
+            "top10": false,
+            "instanceName": "*",
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "name": "seconds_saved",
+            "aggregateFunction": "SUM",
+            "deviceGroupFullPath": "*",
+            "deviceDisplayName": "##rewstDeviceName##",
+            "aggregate": false
+          }],
+          "hideZeroPercentSlices": true,
+          "groupRemainingAsOthers": false,
+          "pieChartItems": [{
+            "dataPointName": "seconds_saved",
+            "color": "Auto",
+            "legend": "##INSTANCE##"
+          }],
+          "title": "##rewstDeviceName## - Time Range - Time Savings By Workflow"
+        },
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 6,
+        "row": 62,
+        "sizey": 6
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - Top 25 Running Workflows",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "type": "pieChart",
+        "timescale": "day",
+        "pieChartInfo": {
+          "maxSlicesCanBeShown": 25,
+          "virtualDataPoints": [],
+          "showLabelsAndLinesOnPC": true,
+          "counters": [],
+          "dataPoints": [{
+            "dataPointName": "running",
+            "top10": false,
+            "instanceName": "*",
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "name": "running",
+            "aggregateFunction": "SUM",
+            "deviceGroupFullPath": "*",
+            "deviceDisplayName": "##rewstDeviceName##",
+            "aggregate": false
+          }],
+          "hideZeroPercentSlices": true,
+          "groupRemainingAsOthers": false,
+          "pieChartItems": [{
+            "dataPointName": "running",
+            "color": "Auto",
+            "legend": "##INSTANCE##"
+          }],
+          "title": "##rewstDeviceName## - Time Range - Top 25 Running Workflows"
+        },
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 7,
+        "sizex": 6,
+        "row": 62,
+        "sizey": 6
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - Top 25 Successful Workflows",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "type": "pieChart",
+        "timescale": "day",
+        "pieChartInfo": {
+          "maxSlicesCanBeShown": 25,
+          "virtualDataPoints": [],
+          "showLabelsAndLinesOnPC": true,
+          "counters": [],
+          "dataPoints": [{
+            "dataPointName": "success",
+            "top10": false,
+            "instanceName": "*",
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "name": "success",
+            "aggregateFunction": "SUM",
+            "deviceGroupFullPath": "*",
+            "deviceDisplayName": "##rewstDeviceName##",
+            "aggregate": false
+          }],
+          "hideZeroPercentSlices": true,
+          "groupRemainingAsOthers": false,
+          "pieChartItems": [{
+            "dataPointName": "success",
+            "color": "Auto",
+            "legend": "##INSTANCE##"
+          }],
+          "title": "##rewstDeviceName## - Time Range - Top 25 Successful Workflows"
+        },
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 12,
+        "row": 57,
+        "sizey": 5
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - Total Running Executions",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 1,
+        "graphInfo": {
+          "virtualDataPoints": [],
+          "minValue": 0,
+          "topX": 0,
+          "maxValue": "NaN",
+          "dataPoints": [{
+            "dataPointName": "running",
+            "instanceName": {
+              "isGlob": true,
+              "value": "*"
+            },
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "consolidateFunction": "max",
+            "display": {
+              "color": "purple",
+              "legend": "executions",
+              "type": "stack",
+              "option": "custom"
+            },
+            "name": "running",
+            "aggregateFunction": "SUM",
+            "deviceDisplayName": {
+              "isGlob": true,
+              "value": "##rewstDeviceName##"
+            },
+            "deviceGroupFullPath": {
+              "isGlob": true,
+              "value": "*"
+            }
+          }],
+          "verticalLabel": "Executions",
+          "aggregate": true,
+          "desc": true,
+          "scaleUnit": 1000,
+          "globalConsolidateFunction": "default"
+        },
+        "type": "cgraph",
+        "timescale": "1day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 7,
+        "sizex": 6,
+        "row": 47,
+        "sizey": 3
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "##rewstDeviceName## - Time Range - Up/Down",
+        "description": "",
+        "theme": "newSolidDarkBlue",
+        "interval": 3,
+        "graphInfo": {
+          "virtualDataPoints": [{
+            "rpn": "if(un(ExitCode), unkn(), if(gt( ExitCode,0),10, 1 ))",
+            "display": {
+              "color": "red1",
+              "legend": "LogicModule_Status",
+              "type": "stack",
+              "option": "custom"
+            },
+            "name": "LogicModule_Status"
+          }],
+          "minValue": "NaN",
+          "topX": 0,
+          "maxValue": "NaN",
+          "dataPoints": [
+            {
+              "dataPointName": "Status",
+              "instanceName": {
+                "isGlob": false,
+                "value": "443"
+              },
+              "dataSourceFullName": "HTTPS",
+              "consolidateFunction": "max",
+              "display": {
+                "color": "red2",
+                "legend": "##DATASOURCENAME##_status",
+                "type": "stack",
+                "option": "custom"
+              },
+              "name": "https_Status",
+              "aggregateFunction": "MAX",
+              "deviceDisplayName": {
+                "isGlob": false,
+                "value": "##rewstDeviceName##"
+              },
+              "deviceGroupFullPath": {
+                "isGlob": true,
+                "value": "*"
+              }
+            },
+            {
+              "dataPointName": "Status",
+              "instanceName": {
+                "isGlob": false,
+                "value": "80"
+              },
+              "dataSourceFullName": "HTTP (HTTP-)",
+              "consolidateFunction": "max",
+              "display": {
+                "color": "teal",
+                "legend": "##DATASOURCENAME##_status",
+                "type": "stack",
+                "option": "custom"
+              },
+              "name": "http_Status",
+              "aggregateFunction": "MAX",
+              "deviceDisplayName": {
+                "isGlob": false,
+                "value": "##rewstDeviceName##"
+              },
+              "deviceGroupFullPath": {
+                "isGlob": true,
+                "value": "*"
+              }
+            },
+            {
+              "dataPointName": "Status",
+              "instanceName": {
+                "isGlob": false,
+                "value": "80"
+              },
+              "dataSourceFullName": "Port-",
+              "consolidateFunction": "max",
+              "display": {
+                "color": "orange2",
+                "legend": "Port80_status",
+                "type": "stack",
+                "option": "custom"
+              },
+              "name": "Port80_status",
+              "aggregateFunction": "MAX",
+              "deviceDisplayName": {
+                "isGlob": false,
+                "value": "##rewstDeviceName##"
+              },
+              "deviceGroupFullPath": {
+                "isGlob": true,
+                "value": "*"
+              }
+            },
+            {
+              "dataPointName": "Status",
+              "instanceName": {
+                "isGlob": false,
+                "value": "443"
+              },
+              "dataSourceFullName": "Port-",
+              "consolidateFunction": "max",
+              "display": {
+                "color": "yellow",
+                "legend": "Port443_status",
+                "type": "stack",
+                "option": "custom"
+              },
+              "name": "Port443_status",
+              "aggregateFunction": "MAX",
+              "deviceDisplayName": {
+                "isGlob": false,
+                "value": "##rewstDeviceName##"
+              },
+              "deviceGroupFullPath": {
+                "isGlob": true,
+                "value": "*"
+              }
+            },
+            {
+              "dataPointName": "exitCode",
+              "instanceName": {
+                "isGlob": true,
+                "value": "*"
+              },
+              "dataSourceFullName": "Rewst_Workflow_Executions",
+              "consolidateFunction": "average",
+              "display": {
+                "color": null,
+                "legend": null,
+                "type": "line",
+                "option": "none"
+              },
+              "name": "exitCode",
+              "aggregateFunction": "MAX",
+              "deviceDisplayName": {
+                "isGlob": false,
+                "value": "##rewstDeviceName##"
+              },
+              "deviceGroupFullPath": {
+                "isGlob": true,
+                "value": "*"
+              }
+            }
+          ],
+          "verticalLabel": "Online : 1 Offline : >1",
+          "aggregate": true,
+          "desc": true,
+          "scaleUnit": 1000,
+          "globalConsolidateFunction": "default"
+        },
+        "type": "cgraph",
+        "timescale": "1day",
+        "version": 2
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 12,
+        "row": 44,
+        "sizey": 3
+      },
+      "config": {
+        "displaySettings": {},
+        "timezone": "America/Chicago",
+        "supportCustomProperty": false,
+        "description": "",
+        "type": "deviceSLA",
+        "version": 2,
+        "calculationMethod": 0,
+        "daysInWeek": "1,2,3,4,5,6,7",
+        "displayType": 2,
+        "isSupportCustomProperty": false,
+        "topX": 1,
+        "bottomLabel": "Time Available",
+        "name": "##rewstDeviceName## - Time Range - Up/Down",
+        "displayPercentageBar": true,
+        "periodInOneDay": "*",
+        "theme": "newSolidDarkBlue",
+        "interval": 5,
+        "metrics": [
+          {
+            "groupName": "*",
+            "instances": "*",
+            "metric": "Status",
+            "dataSourceFullName": "HTTPS",
+            "bottomLabel": "##rewstDeviceName## - ##DATASOURCENAME## - Status",
+            "threshold": "= 1",
+            "deviceName": "##rewstDeviceName##",
+            "exclusionSDTType": ""
+          },
+          {
+            "groupName": "*",
+            "instances": "*",
+            "metric": "Status",
+            "dataSourceFullName": "HTTP (HTTP-)",
+            "bottomLabel": "##rewstDeviceName## - ##DATASOURCENAME## - ResponseTime",
+            "threshold": "= 1",
+            "deviceName": "##rewstDeviceName##",
+            "exclusionSDTType": ""
+          },
+          {
+            "groupName": "*",
+            "instances": "443",
+            "metric": "ResponseTime",
+            "dataSourceFullName": "HTTPS",
+            "bottomLabel": "##rewstDeviceName## - ##DATASOURCENAME## - ResponseTime",
+            "threshold": "<= 700",
+            "deviceName": "##rewstDeviceName##",
+            "exclusionSDTType": ""
+          },
+          {
+            "groupName": "*",
+            "instances": "*",
+            "metric": "responseTime",
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "bottomLabel": "##rewstDeviceName## - ##DATASOURCENAME## - responseTime",
+            "threshold": "< 1000",
+            "deviceName": "##rewstDeviceName##",
+            "exclusionSDTType": ""
+          },
+          {
+            "groupName": "*",
+            "instances": "*",
+            "metric": "exitCode",
+            "dataSourceFullName": "Rewst_Workflow_Executions",
+            "bottomLabel": "##rewstDeviceName## - ##DATASOURCENAME## - exitCode",
+            "threshold": "= 0",
+            "deviceName": "##rewstDeviceName##",
+            "exclusionSDTType": ""
+          }
+        ],
+        "timescale": "Last hour",
+        "unmonitoredTimeType": 0,
+        "colorThresholds": [
+          {
+            "level": 2,
+            "threshold": 100,
+            "relation": "!="
+          },
+          {
+            "level": 3,
+            "threshold": 100,
+            "relation": "!="
+          },
+          {
+            "level": 4,
+            "threshold": 100,
+            "relation": "!="
+          }
+        ]
+      }
+    },
+    {
+      "position": {
+        "col": 1,
+        "sizex": 6,
+        "row": 6,
+        "sizey": 2
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "README",
+        "description": "",
+        "theme": "newBorderDarkBlue",
+        "interval": 15,
+        "type": "text",
+        "timescale": "day",
+        "version": 2,
+        "content": "<h1>README<strong><\/strong><br><\/h1><h2><strong><u>Dashboard Requirements<\/u><\/strong><\/h2><p><span style=\"background-color: rgb(247, 218, 100);\">Dashboard Token :<\/span> <strong>rewstDeviceName<\/strong><\/p><ul><li><span style=\"background-color: rgb(247, 218, 100);\">Dashboard Token Value :<\/span><strong>app.rewst.io OR rewst device name in Logicmonitor<\/strong><\/li><\/ul><h2><strong><u>LM Logs Alert Requirements <em>(Optional)<\/em><\/u><\/strong><\/h2><p><span style=\"background-color: rgb(247, 218, 100);\">LM Logs Pipeline Name :<\/span><strong>&nbsp;Automation<\/strong><\/p><ul><li><span style=\"background-color: rgb(247, 218, 100);\">LM Logs Pipeline Query :&nbsp;<\/span><strong>syslog_identifier=\"Rewst_Workflow_Execution\"<\/strong><\/li><li><span style=\"background-color: rgb(247, 218, 100);\">Display description :<\/span><strong>Syslog via API<\/strong><strong><\/strong><\/li><\/ul><p><strong><\/strong><span style=\"background-color: rgb(247, 218, 100);\"><strong>#1<\/strong> LM Logs Pipeline Alert Condition Name :<\/span> <strong>Rewst - Workflow Execution Failed<\/strong><\/p><ul><li><span style=\"background-color: rgb(247, 218, 100);\">Pipeline :&nbsp;<\/span><strong>Automation<\/strong><\/li><li><span style=\"background-color: rgb(247, 218, 100);\">LM Logs Pipeline Alerting Condition :&nbsp;<\/span><strong>execution_status=\"failed\"<\/strong><\/li><li><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/strong><span style=\"background-color: rgb(247, 218, 100);\">Alert trigger conditions :&nbsp;<\/span><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span>For each matching log<\/strong><\/li><li><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/strong><span style=\"background-color: rgb(247, 218, 100);\">Alert clear conditions :&nbsp;<\/span><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span>Clear after 3 days<\/strong><\/li><li><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/strong><span style=\"background-color: rgb(247, 218, 100);\">Auto-clear after acknowledge :<\/span><strong><span style=\"background-color: rgb(247, 218, 100);\"> <\/span>true<\/strong><\/li><li><strong><\/strong><em id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\">LM Logs Log Metadata Fields To Include <\/span><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/em><em id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/em><strong><em id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\"><\/span><strong><span style=\"background-color: rgb(247, 218, 100);\">:<\/span><\/strong> <strong>See Below<\/strong><\/em><\/strong><strong><\/strong><\/li><\/ul><p id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\"><strong>#2&nbsp;<\/strong>LM Logs Pipeline Alert Condition Name :<\/span> <strong>Rewst - Workflow Execution Canceled<\/strong><\/p><ul><li id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\">Pipeline :&nbsp;<\/span><strong>Automation<\/strong><span style=\"background-color: rgb(247, 218, 100);\"><br><\/span><\/li><li><span style=\"background-color: rgb(247, 218, 100);\">LM Logs Pipeline Alerting Condition :&nbsp;<\/span><strong>execution_status=\"canceled\"<\/strong><\/li><li><span style=\"background-color: rgb(247, 218, 100);\">Alert trigger conditions :&nbsp;<\/span><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span>For each matching log<\/strong><\/li><li><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/strong><span style=\"background-color: rgb(247, 218, 100);\">Alert clear conditions :&nbsp;<\/span><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span>Clear after 3 days<\/strong><\/li><li><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/strong><span style=\"background-color: rgb(247, 218, 100);\">Auto-clear after acknowledge :<\/span><strong><span style=\"background-color: rgb(247, 218, 100);\"> <\/span>true<\/strong><\/li><li><strong><\/strong><em id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\">LM Logs Log Metadata Fields To Include :<\/span><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/em><em id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/em><strong><em id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\"><\/span><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/strong> <strong>See Below<\/strong><\/em><\/strong><strong><\/strong><strong><\/strong><\/li><\/ul><p id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\"><strong>#3&nbsp;<\/strong>LM Logs Pipeline Alert Condition Name :<\/span> <strong>Rewst - Workflow Execution Canceling<\/strong><\/p><ul><li id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\">Pipeline :&nbsp;<\/span><strong>Automation<\/strong><span style=\"background-color: rgb(247, 218, 100);\"><br><\/span><\/li><li><span style=\"background-color: rgb(247, 218, 100);\">LM Logs Pipeline Alerting Condition :&nbsp;<\/span><strong>execution_status=\"canceling\"<\/strong><\/li><li><span style=\"background-color: rgb(247, 218, 100);\">Alert trigger conditions :&nbsp;<\/span><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span>For each matching log<\/strong><\/li><li><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/strong><span style=\"background-color: rgb(247, 218, 100);\">Alert clear conditions :&nbsp;<\/span><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span>Clear after 3 days<\/strong><\/li><li><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/strong><span style=\"background-color: rgb(247, 218, 100);\">Auto-clear after acknowledge :<\/span><strong><span style=\"background-color: rgb(247, 218, 100);\"> <\/span>true<\/strong><\/li><li><strong><\/strong><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span><em id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\">LM Logs Log Metadata Fields To Include :<\/span><span style=\"background-color: rgb(247, 218, 100);\"><\/span><strong><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/strong> <strong>See Below<\/strong><\/em><em id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/em><strong><em id=\"isPasted\"><span style=\"background-color: rgb(247, 218, 100);\"><\/span><\/em><\/strong><strong><\/strong><strong><\/strong><\/li><\/ul><p><strong><\/strong><\/p><p><meta charset=\"utf-8\" id=\"isPasted\"><\/p><table class=\"sc-JAcba jCcvnN w-100 ovf-a border-4px\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; table-layout: fixed; min-width: 568px; border-spacing: 0px; width: 844.5px; overflow: auto; color: rgb(20, 29, 48); font-family: Sofia-Pro, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; letter-spacing: normal; orphans: 2; text-align: start; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(245, 245, 246); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\"><thead><tr><th style=\"text-align: left;\"><em><span style=\"background-color: rgb(247, 218, 100);\">LM Logs Log Metadata Fields To Include : (#1, #2, and #3)<\/span><strong><\/strong><\/em><strong><\/strong><\/th><\/tr><\/thead><tbody class=\"sc-gHfsNP fjCiZV\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; font-size: small; background: rgb(245, 245, 246);\"><tr id=\"0\" class=\"sc-cKZGGw emzIUP\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; height: 32px; cursor: default; font-size: small; background: rgb(255, 255, 255);\"><td class=\"sc-eltbHq kyTrTK\" colspan=\"1\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 2px 6px; -webkit-font-smoothing: antialiased; font-size: small; overflow: hidden; text-overflow: ellipsis; word-break: break-word; white-space: nowrap; color: rgb(30, 29, 31); border-right-width: 1px; border-right-style: dashed; width: 100%;\"><p class=\"MuiTypography-root sc-bdfBQB dxfsqH MuiTypography-body1 MuiTypography-noWrap\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; font-size: small; font-family: Sofia-Pro, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 18px; letter-spacing: 0px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: 307px; display: flex; word-break: break-word;\">execution_url<\/p><\/td><\/tr><tr id=\"1\" class=\"sc-cKZGGw emzIUP\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; height: 32px; cursor: default; font-size: small;\"><td class=\"sc-eltbHq kyTrTK\" colspan=\"1\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 2px 6px; -webkit-font-smoothing: antialiased; font-size: small; overflow: hidden; text-overflow: ellipsis; word-break: break-word; white-space: nowrap; color: rgb(30, 29, 31); border-right-width: 1px; border-right-style: dashed; width: 100%;\"><p class=\"MuiTypography-root sc-bdfBQB dxfsqH MuiTypography-body1 MuiTypography-noWrap\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; font-size: small; font-family: Sofia-Pro, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 18px; letter-spacing: 0px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: 307px; display: flex; word-break: break-word;\">execution_status<\/p><\/td><\/tr><tr id=\"2\" class=\"sc-cKZGGw emzIUP\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; height: 32px; cursor: default; font-size: small; background: rgb(255, 255, 255);\"><td class=\"sc-eltbHq kyTrTK\" colspan=\"1\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 2px 6px; -webkit-font-smoothing: antialiased; font-size: small; overflow: hidden; text-overflow: ellipsis; word-break: break-word; white-space: nowrap; color: rgb(30, 29, 31); border-right-width: 1px; border-right-style: dashed; width: 100%;\"><p class=\"MuiTypography-root sc-bdfBQB dxfsqH MuiTypography-body1 MuiTypography-noWrap\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; font-size: small; font-family: Sofia-Pro, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 18px; letter-spacing: 0px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: 307px; display: flex; word-break: break-word;\">org_name<\/p><\/td><\/tr><tr id=\"3\" class=\"sc-cKZGGw emzIUP\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; height: 32px; cursor: default; font-size: small;\"><td class=\"sc-eltbHq kyTrTK\" colspan=\"1\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 2px 6px; -webkit-font-smoothing: antialiased; font-size: small; overflow: hidden; text-overflow: ellipsis; word-break: break-word; white-space: nowrap; color: rgb(30, 29, 31); border-right-width: 1px; border-right-style: dashed; width: 100%;\"><p class=\"MuiTypography-root sc-bdfBQB dxfsqH MuiTypography-body1 MuiTypography-noWrap\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; font-size: small; font-family: Sofia-Pro, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 18px; letter-spacing: 0px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: 307px; display: flex; word-break: break-word;\">workflow_name<\/p><\/td><\/tr><tr id=\"4\" class=\"sc-cKZGGw emzIUP\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; height: 32px; cursor: default; font-size: small; background: rgb(255, 255, 255);\"><td class=\"sc-eltbHq kyTrTK\" colspan=\"1\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 2px 6px; -webkit-font-smoothing: antialiased; font-size: small; overflow: hidden; text-overflow: ellipsis; word-break: break-word; white-space: nowrap; color: rgb(30, 29, 31); border-right-width: 1px; border-right-style: dashed; border-bottom-width: 1px; border-bottom-style: solid; width: 100%; vertical-align: middle;\"><p class=\"MuiTypography-root sc-bdfBQB dxfsqH MuiTypography-body1 MuiTypography-noWrap\" style=\"box-sizing: border-box; border-color: rgb(214, 216, 219); margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; font-size: small; font-family: Sofia-Pro, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 18px; letter-spacing: 0px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: 307px; display: flex; word-break: break-word;\">workflow_url<\/p><\/td><\/tr><\/tbody><\/table><p><br><\/p><h2><strong>LmLogs Queries<\/strong><\/h2><p id=\"isPasted\"><strong>Executions - Success By Workflow - Last 24 Hours<\/strong><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier= \"Rewst_Workflow_Execution\" | parse \"workflow_name = *\" as workflow | count by workflow | sort by _count desc<\/span><\/p><p><strong>Executions - Failures by Org w/URL - Last 24 Hours<\/strong><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier= \"Rewst_Workflow_Execution\" and execution_status=\"failed\" | parse \"execution_url = *\" as url | parse \"workflow_name = *\" as workflow | parse \"org_name = *\" as org | count by created_at, org, workflow, url | sort by created_at desc<\/span><\/p><p><strong>Executions - By Status - Last 24 Hours<\/strong><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier= \"Rewst_Workflow_Execution\" &nbsp;| parse \"execution_status = *\" as status | count by status | sort by _count desc<\/span><\/p><p><strong>Executions - By Org_Name - Last 24 Hours<\/strong><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier= \"Rewst_Workflow_Execution\" | parse \"org_name = *\" as org | count by org | sort by _count desc<\/span><\/p><p><strong>Workflow Updates - By Date, User, Workflow, Org, Crate, SyncStatus - Last 24 Hours<\/strong><\/p><p><span style=\"color: rgb(0, 0, 0); background-color: rgb(250, 197, 28);\">syslog_identifier=\"Rewst_Workflow_Updated\" | parse \"updated_by = *\" as user | &nbsp;parse \"workflow_url = *\" as url | count by is_sync, type, workflow_name, crate_name, org_name, user, updated_at, url | sort by updated_at desc<\/span><\/p><p><strong>Workflow Updates - By User - Last 24 Hours<\/strong><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier=\"Rewst_Workflow_Updated\" | parse \"updated_by = *\" as user | count by user | sort by _count desc<\/span><\/p><p id=\"isPasted\"><strong><\/strong><strong>Workflow Updates - By Crate - Last 24 Hours<\/strong><strong><\/strong><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier=\"Rewst_Workflow_Updated\" | parse \"crate_name = *\" as crate | count by crate | sort by _count desc<\/span><\/p><p><br><br><\/p>"
+      }
+    },
+    {
+      "position": {
+        "col": 7,
+        "sizex": 6,
+        "row": 6,
+        "sizey": 2
+      },
+      "config": {
+        "displaySettings": {},
+        "isSupportCustomProperty": false,
+        "supportCustomProperty": false,
+        "name": "LMLogs Queries",
+        "description": "",
+        "theme": "newBorderDarkBlue",
+        "interval": 15,
+        "type": "text",
+        "timescale": "day",
+        "version": 2,
+        "content": "<h1><strong id=\"isPasted\">LmLogs Queries<\/strong><\/h1><p><strong id=\"isPasted\"><strong id=\"isPasted\"><em>(update hyperlinks)<\/em><\/strong><\/strong><\/p><p id=\"isPasted\"><a href=\"https://github.com/nikolazleo/Rewst_Workflow_Executions\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Executions - Success By Workflow - Last 24 Hours<\/strong><\/a><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier= \"Rewst_Workflow_Execution\" | parse \"workflow_name = *\" as workflow | count by workflow | sort by _count desc<\/span><\/p><p><a href=\"https://github.com/nikolazleo/Rewst_Workflow_Executions\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Executions - Failures by Org w/URL - Last 24 Hours<\/strong><\/a><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier= \"Rewst_Workflow_Execution\" and execution_status=\"failed\" | parse \"execution_url = *\" as url | parse \"workflow_name = *\" as workflow | parse \"org_name = *\" as org | count by created_at, org, workflow, url | sort by created_at desc<\/span><\/p><p><a href=\"https://github.com/nikolazleo/Rewst_Workflow_Executions\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Executions - By Status - Last 24 Hours<\/strong><\/a><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier= \"Rewst_Workflow_Execution\" &nbsp;| parse \"execution_status = *\" as status | count by status | sort by _count desc<\/span><\/p><p><a href=\"https://github.com/nikolazleo/Rewst_Workflow_Executions\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Executions - By Org_Name - Last 24 Hours<\/strong><\/a><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier= \"Rewst_Workflow_Execution\" | parse \"org_name = *\" as org | count by org | sort by _count desc<\/span><\/p><p><a href=\"https://github.com/nikolazleo/Rewst_Workflow_Executions\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Workflow Updates - By Date, User, Workflow, Org, Crate, SyncStatus - Last 24 Hours<\/strong><\/a><\/p><p><span style=\"color: rgb(0, 0, 0); background-color: rgb(250, 197, 28);\">syslog_identifier=\"Rewst_Workflow_Updated\" | parse \"updated_by = *\" as user | &nbsp;parse \"workflow_url = *\" as url | count by is_sync, type, workflow_name, crate_name, org_name, user, updated_at, url | sort by updated_at desc<\/span><\/p><p><a href=\"https://github.com/nikolazleo/Rewst_Workflow_Executions\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Workflow Updates - By User - Last 24 Hours<\/strong><\/a><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier=\"Rewst_Workflow_Updated\" | parse \"updated_by = *\" as user | count by user | sort by _count desc<\/span><\/p><p id=\"isPasted\"><a href=\"https://github.com/nikolazleo/Rewst_Workflow_Executions\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Workflow Updates - By Crate - Last 24 Hours<\/strong><\/a><strong><\/strong><strong><\/strong><\/p><p><span style=\"background-color: rgb(250, 197, 28);\">syslog_identifier=\"Rewst_Workflow_Updated\" | parse \"crate_name = *\" as crate | count by crate | sort by _count desc<\/span><\/p><h1><br><\/h1>"
+      }
+    }
+  ],
+  "version": 2
+}

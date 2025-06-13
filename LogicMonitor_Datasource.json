@@ -1,0 +1,989 @@
+{
+  "collectionMethod": "batchscript",
+  "datapoints": [
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The number of canceles the workflow has experienced",
+      "interpretMethod": "namevalue",
+      "threshold": "!= 0 0 0",
+      "interpretExpr": "##WILDVALUE##.canceled",
+      "type": "gauge",
+      "clearInterval": 60,
+      "originId": "cLE7uGy4QzmYcOo8Sf1Jiw",
+      "useValue": "output",
+      "min": "0",
+      "alertBody": "Start : ##START##\n-------------------------------------------------------\nDuration : ##DURATION##\n-------------------------------------------------------\nWorkflow : ##INSTANCE##\n-------------------------------------------------------\nOrg : ##auto.rewst.org##\n-------------------------------------------------------\n##DATAPOINT## = ##VALUE##\n-------------------------------------------------------\nType : ##auto.rewst.type##\n-------------------------------------------------------\nCrate : ##INSTANCEGROUP##\n-------------------------------------------------------\nTags: ##auto.rewst.tags.name##\n-------------------------------------------------------\nUpdatedBy: ##auto.rewst.updatedBy##\n-------------------------------------------------------\nUpdatedAt: ##auto.rewst.updatedAt##\n-------------------------------------------------------\nCreatedAt: ##auto.rewst.createdAt##\n-------------------------------------------------------\n[WorkFlow](https://app.rewst.io/organizations/##auto.rewst.org_id##/workflows/##WILDVALUE##)\n-------------------------------------------------------\n[Failures](https://app.rewst.io/organizations/##auto.rewst.org_id##/results/by-workflow/##WILDVALUE##?includeSubWorkflows=true)\n-------------------------------------------------------\n>\n> Ticket Id: ##EXTERNALTICKETID##\n>",
+      "name": "canceled",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The workflow's clone count",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.clones",
+      "type": "gauge",
+      "clearInterval": 0,
+      "originId": "k3whCv2gRJuzA4vNUea_2A",
+      "useValue": "output",
+      "min": "0",
+      "name": "clones",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "1",
+      "triggerInterval": 0,
+      "dataType": 4,
+      "maxDigits": 4,
+      "description": "Exit code of the script. 0=finished & 1=failed",
+      "interpretMethod": "none",
+      "threshold": "= 1",
+      "type": "gauge",
+      "clearInterval": 5,
+      "originId": "PVmvh7iuRJym3vSC3nZRFw",
+      "useValue": "exitCode",
+      "min": "0",
+      "name": "exitCode",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The number of failures the workflow has experienced",
+      "interpretMethod": "namevalue",
+      "threshold": "!= 0 0 0",
+      "interpretExpr": "##WILDVALUE##.failure",
+      "type": "gauge",
+      "clearInterval": 60,
+      "originId": "0gkzmFs_Sn6UN5HoIvdFYQ",
+      "useValue": "output",
+      "min": "0",
+      "alertBody": "Start : ##START##\n-------------------------------------------------------\nDuration : ##DURATION##\n-------------------------------------------------------\nWorkflow : ##INSTANCE##\n-------------------------------------------------------\nOrg : ##auto.rewst.org##\n-------------------------------------------------------\n##DATAPOINT## = ##VALUE##\n-------------------------------------------------------\nType : ##auto.rewst.type##\n-------------------------------------------------------\nCrate : ##INSTANCEGROUP##\n-------------------------------------------------------\nTags: ##auto.rewst.tags.name##\n-------------------------------------------------------\nUpdatedBy: ##auto.rewst.updatedBy##\n-------------------------------------------------------\nUpdatedAt: ##auto.rewst.updatedAt##\n-------------------------------------------------------\nCreatedAt: ##auto.rewst.createdAt##\n-------------------------------------------------------\n[WorkFlow](https://app.rewst.io/organizations/##auto.rewst.org_id##/workflows/##WILDVALUE##)\n-------------------------------------------------------\n[Failures](https://app.rewst.io/organizations/##auto.rewst.org_id##/results/by-workflow/##WILDVALUE##?status=failed&includeSubWorkflows=true)\n-------------------------------------------------------\n>\n> Ticket Id: ##EXTERNALTICKETID##\n>",
+      "name": "failure",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "1",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The workflow was cloned from a crate or local workflow.",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.is_clone",
+      "type": "gauge",
+      "clearInterval": 0,
+      "originId": "IbykfAerR6SuPVQgpGfblw",
+      "useValue": "output",
+      "min": "0",
+      "name": "is_clone",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "1",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The workflow was authored locally and could be a parent to cloned workflows.",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.is_local",
+      "type": "gauge",
+      "clearInterval": 0,
+      "originId": "eSB3umrYTSSfD4owhY4GEw",
+      "useValue": "output",
+      "min": "0",
+      "name": "is_local",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "1",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The workflow is used in parent workflows.",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.is_subworkflow",
+      "type": "gauge",
+      "clearInterval": 0,
+      "originId": "fMJmaA_7Ru6nnCoXqIL4ww",
+      "useValue": "output",
+      "min": "0",
+      "name": "is_subworkflow",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "1",
+      "triggerInterval": 0,
+      "enableAnomalyAlertSuppression": "0,0,0",
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The workflow's is_synchronized with a crate",
+      "interpretMethod": "namevalue",
+      "criticalAdAdvSetting": "0,100,3.0,1,0,5,0.0,",
+      "interpretExpr": "##WILDVALUE##.is_synchronized",
+      "type": "gauge",
+      "clearInterval": 60,
+      "adAdvSettingEnabled": true,
+      "errorAdAdvSetting": "1,100,1.0,1,0,2,0.0,",
+      "warnAdAdvSetting": "0,100,1.5,1,0,5,0.0,",
+      "originId": "5YYGpF2lSsq8Hs8ra1rVXQ",
+      "useValue": "output",
+      "min": "0",
+      "name": "is_synchronized",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "1",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The workflow's not_synchronized with a crate",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.not_synchronized",
+      "type": "gauge",
+      "clearInterval": 10,
+      "originId": "bk4UyftwRTKBWdY_obB0rQ",
+      "useValue": "output",
+      "min": "0",
+      "name": "not_synchronized",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The workflow's parent_workflow count",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.parent_workflows",
+      "type": "gauge",
+      "clearInterval": 0,
+      "originId": "aQqQBE4DSvCsrfKiT-vbrQ",
+      "useValue": "output",
+      "min": "0",
+      "name": "parent_workflows",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 4,
+      "maxDigits": 4,
+      "description": "Execution time of the collector script in ms",
+      "interpretMethod": "none",
+      "type": "gauge",
+      "clearInterval": 0,
+      "originId": "nP-TNz7vR5-w10JsliC6sg",
+      "useValue": "responseTime",
+      "min": "0",
+      "name": "responseTime",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The number of running workflow executions",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.running",
+      "type": "gauge",
+      "clearInterval": 0,
+      "originId": "4vq5-TRtTkKG8mhfJAyi_g",
+      "useValue": "output",
+      "min": "",
+      "name": "running",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The configured amount of time in seconds saved by a workflow's execution.",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.seconds_configured",
+      "type": "gauge",
+      "clearInterval": 0,
+      "originId": "oTIxNG_LRDulUnbPK0X_yQ",
+      "useValue": "output",
+      "min": "0",
+      "alertBody": "Please Configure Time Saved.\n\nAn estimate of the time it would take a human to accomplish the tasks in this workflow\n\nURL: https://app.rewst.io/organizations/019037b1-3e45-7503-ba3c-cd7ef020d6f4/workflows/##WILDVALUE##",
+      "name": "seconds_configured",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The number of seconds saved by the workflow. ",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.seconds_saved",
+      "type": "gauge",
+      "clearInterval": 0,
+      "originId": "ZcxmKsBFRfif4A_WRNiXOw",
+      "useValue": "output",
+      "min": "0",
+      "name": "seconds_saved",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The number of successes the workflow has experienced",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.success",
+      "type": "gauge",
+      "clearInterval": 60,
+      "originId": "4ofgIX69TuWBd-vfHj7rwg",
+      "useValue": "output",
+      "min": "",
+      "name": "success",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The number of timeout seconds configured for the workflow.",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.timeout",
+      "type": "gauge",
+      "clearInterval": 0,
+      "originId": "TXZWGUC4TKyh4sZwfxRZOA",
+      "useValue": "output",
+      "min": "0",
+      "name": "timeout",
+      "noData": "Trigger error alert"
+    },
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The workflow's trigger count",
+      "interpretMethod": "namevalue",
+      "interpretExpr": "##WILDVALUE##.triggers",
+      "type": "gauge",
+      "clearInterval": 0,
+      "originId": "aT6Xz9YNR_29HSeVtCmOfw",
+      "useValue": "output",
+      "min": "0",
+      "name": "triggers",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The number of unknown executions the workflow has experienced",
+      "interpretMethod": "namevalue",
+      "threshold": "!= 0 0 0",
+      "interpretExpr": "##WILDVALUE##.unknown",
+      "type": "gauge",
+      "clearInterval": 60,
+      "originId": "qtd_YR9gTL6RIX3tF5VVOQ",
+      "useValue": "output",
+      "min": "0",
+      "alertBody": "Start : ##START##\n-------------------------------------------------------\nDuration : ##DURATION##\n-------------------------------------------------------\nWorkflow : ##INSTANCE##\n-------------------------------------------------------\nOrg : ##auto.rewst.org##\n-------------------------------------------------------\n##DATAPOINT## = ##VALUE##\n-------------------------------------------------------\nType : ##auto.rewst.type##\n-------------------------------------------------------\nCrate : ##INSTANCEGROUP##\n-------------------------------------------------------\nTags: ##auto.rewst.tags.name##\n-------------------------------------------------------\nUpdatedBy: ##auto.rewst.updatedBy##\n-------------------------------------------------------\nUpdatedAt: ##auto.rewst.updatedAt##\n-------------------------------------------------------\nCreatedAt: ##auto.rewst.createdAt##\n-------------------------------------------------------\n[WorkFlow](https://app.rewst.io/organizations/##auto.rewst.org_id##/workflows/##WILDVALUE##)\n-------------------------------------------------------\n[All](https://app.rewst.io/organizations/##auto.rewst.org_id##/results/by-workflow/##WILDVALUE##?includeSubWorkflows=true)\n-------------------------------------------------------\n>\n> Ticket Id: ##EXTERNALTICKETID##\n>",
+      "name": "unknown",
+      "noData": "Do not trigger an alert"
+    },
+    {
+      "max": "1",
+      "triggerInterval": 0,
+      "dataType": 7,
+      "maxDigits": 4,
+      "description": "The workflow's updated timestamp has changed. Please add a note describing the changes.",
+      "interpretMethod": "namevalue",
+      "threshold": "!= 0",
+      "interpretExpr": "##WILDVALUE##.updated",
+      "type": "gauge",
+      "clearInterval": 20,
+      "originId": "zGlYStPDSReN2gAzDqR7og",
+      "useValue": "output",
+      "min": "0",
+      "alertBody": "Start : ##START##\n-------------------------------------------------------\nDuration : ##DURATION##\n-------------------------------------------------------\nWorkflow : ##INSTANCE##\n-------------------------------------------------------\nOrg : ##auto.rewst.org##\n-------------------------------------------------------\n##DATAPOINT## = ##VALUE##\n-------------------------------------------------------\nType : ##auto.rewst.type##\n-------------------------------------------------------\nCrate : ##INSTANCEGROUP##\n-------------------------------------------------------\nTags: ##auto.rewst.tags.name##\n-------------------------------------------------------\nUpdatedBy: ##auto.rewst.updatedBy##\n-------------------------------------------------------\nUpdatedAt: ##auto.rewst.updatedAt##\n-------------------------------------------------------\nCreatedAt: ##auto.rewst.createdAt##\n-------------------------------------------------------\n[WorkFlow](https://app.rewst.io/organizations/##auto.rewst.org_id##/workflows/##WILDVALUE##)\n-------------------------------------------------------\n[Failures](https://app.rewst.io/organizations/##auto.rewst.org_id##/results/by-workflow/##WILDVALUE##?includeSubWorkflows=true)\n-------------------------------------------------------\n>\n> Ticket Id: ##EXTERNALTICKETID##\n>",
+      "name": "updated",
+      "noData": "Do not trigger an alert"
+    }
+  ],
+  "searchKeywords": "api,application,groovy,rewst",
+  "displayedAs": "Rewst_Workflow_Executions",
+  "description": "https://github.com/nikolazleo/Rewst_Workflow_Executions",
+  "appliesTo": "rewst.webhook.workflow && rewst.webhook.workflow.ad",
+  "activeDiscovery": {
+    "groupExpr": "auto.rewst.unpacked_from.name",
+    "deleteInactiveInstances": true,
+    "groupMethod": "ilp",
+    "discoveryMethod": "ad_script",
+    "autoDeleteInstances": true,
+    "disableDiscoveredInstances": false,
+    "filters": [],
+    "params": {
+      "type": "groovy",
+      "content": "/*******************************************************************************\nRewst Workflows - Active Discovery\n******************************************************************************/\n\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\n\ntry {\n    def jsonNodes = []\n\n    def conn = \"##rewst.webhook.workflow.ad##\".toURL().openConnection()\n    conn.setRequestMethod(\"POST\")\n    conn.setDoOutput(true)\n\n    conn.setRequestProperty(\"x-rewst-secret\", \"##rewst.secret.key##\")\n    conn.setRequestProperty(\"Content-Type\", \"application/json\")\n\n    def requestBody = [\n        type: \"activeDiscovery\"\n    ]\n\n    def jsonBody = JsonOutput.toJson(requestBody)\n    def outputStream = new DataOutputStream(conn.outputStream)\n    outputStream.writeBytes(jsonBody)\n    outputStream.flush()\n    outputStream.close()\n\n    if (conn.responseCode == 200) {\n        def newNodes = new JsonSlurper().parseText(conn.content.text)\n        jsonNodes.addAll(newNodes)\n    } else {\n        println \"HTTP Error: ${conn.responseCode}\"\n        return 1\n    }\n\n    jsonNodes.each { node ->\n        println(\"${node.id}##${node.name}##${node.type}##${node.id}##auto.rewst.unpacked_from.name=${node.unpacked_from}&auto.rewst.unpacked_from.maturity=${node.maturity}&auto.rewst.tags.name=${node.tags}&auto.rewst.createdBy=${node.created_by}&auto.rewst.updatedBy=${node.updated_by}&auto.rewst.type=${node.type}&auto.rewst.createdAt=${node.created_at}&auto.rewst.updatedAt=${node.updated_at}&auto.rewst.org=${node.org}&auto.rewst.org_id=${node.org_id}\")\n    }\n\n    return 0\n} catch (Exception e) {\n    println \"Exception : ${e.message}\"\n    return 1\n}\n"
+    },
+    "discoveryInterval": "15m",
+    "enabled": true,
+    "showDeletedInstanceDays": 0
+  },
+  "collectionAttrs": {
+    "type": "groovy",
+    "content": "/*******************************************************************************\nRewst Workflows - Collection\n ******************************************************************************/\n\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\n\ntry{\n    \ndef jsonNodes = []\n\ndef conn = \"##rewst.webhook.workflow##\".toURL().openConnection()\nconn.setRequestMethod(\"POST\")\nconn.setDoOutput(true)\n\nconn.setRequestProperty(\"x-rewst-secret\", \"##rewst.secret.key##\")\nconn.setRequestProperty(\"Content-Type\", \"application/json\")\n\ndef requestBody = [\n    type: \"collector\"\n]\n\ndef jsonBody = JsonOutput.toJson(requestBody)\ndef outputStream = new DataOutputStream(conn.outputStream)\noutputStream.writeBytes(jsonBody)\noutputStream.flush()\noutputStream.close()\n\nif (conn.responseCode == 200) {\n    def newNodes = new JsonSlurper().parseText(conn.content.text)\n    jsonNodes.addAll(newNodes)\n} else {\n    println \"HTTP Error: ${conn.responseCode}\"\n    return 1\n}\n\n// Loop through each node in our combined output\njsonNodes.each\n        {\n            node ->\n                // Print the collection\n                println(\"${node.id}.failure=${node.failure.toString()}\")\n                println(\"${node.id}.canceled=${node.canceled.toString()}\")\n                println(\"${node.id}.success=${node.success.toString()}\")\n                println(\"${node.id}.seconds_saved=${node.seconds_saved.toString()}\")\n                println(\"${node.id}.updated=${node.updated.toString()}\")\n                println(\"${node.id}.seconds_configured=${node.human_seconds_saved.toString()}\")\n                println(\"${node.id}.is_synchronized=${node.is_synchronized.toString()}\")\n                println(\"${node.id}.is_local=${node.is_local.toString()}\")\n                println(\"${node.id}.is_clone=${node.is_clone.toString()}\")\n                println(\"${node.id}.not_synchronized=${node.not_synchronized.toString()}\")\n                println(\"${node.id}.is_subworkflow=${node.is_subworkflow.toString()}\")\n                println(\"${node.id}.timeout=${node.timeout.toString()}\")\n                println(\"${node.id}.clones=${node.clones.toString()}\")\n                println(\"${node.id}.parent_workflows=${node.parent_workflows.toString()}\")\n                println(\"${node.id}.triggers=${node.triggers.toString()}\")\n                println(\"${node.id}.running=${node.running.toString()}\")\n                println(\"${node.id}.unknown=${node.unknown.toString()}\")\n        }\nreturn 0\n} catch (Exception e) {\n    println \"Exception: ${e.message}\"\n    return 1\n}"
+  },
+  "type": 0,
+  "technicalNotes": "See github for documentation..\n[Rewst_Workflow_Executions](https://github.com/nikolazleo/Rewst_Workflow_Executions)",
+  "useWildValueAsUniqueIdentifier": true,
+  "version": 1749753532,
+  "registryMetadata": {
+    "currentUuid": "2MrfxxgLS9io19K8VM9i-A",
+    "originalUuid": "2MrfxxgLS9io19K8VM9i-A",
+    "locatorId": "",
+    "authorCompanyUuid": "21fb6c50-d653-416e-918b-fff3dcb1394c",
+    "registryVersion": "3.2.0",
+    "checksum": "1c06aca3df08db50e12188a6dc4f4ec3",
+    "namespace": "",
+    "registryId": ""
+  },
+  "multiInstance": true,
+  "graphs": [
+    {
+      "datapoints": [
+        {
+          "datapointName": "failure",
+          "consolidationFn": "max",
+          "name": "failure"
+        }
+      ],
+      "timeScale": "1day",
+      "name": "Failure",
+      "verticalLabel": "executions",
+      "displayPriority": 2,
+      "scale1024": false,
+      "title": "Failure",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "failure",
+          "color": "red",
+          "legend": "failure",
+          "isVirtual": false,
+          "type": "area"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "running",
+          "consolidationFn": "max",
+          "name": "running"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "Running",
+      "verticalLabel": "executions",
+      "displayPriority": 5,
+      "scale1024": false,
+      "title": "Running",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "running",
+          "color": "blue",
+          "legend": "running",
+          "isVirtual": false,
+          "type": "area"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "seconds_saved",
+          "consolidationFn": "average",
+          "name": "seconds_saved"
+        }
+      ],
+      "timeScale": "1day",
+      "name": "Seconds Saved",
+      "verticalLabel": "seconds",
+      "displayPriority": 4,
+      "scale1024": false,
+      "title": "Seconds Saved",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "seconds_saved",
+          "color": "green",
+          "legend": "seconds_saved",
+          "isVirtual": false,
+          "type": "area"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "success",
+          "consolidationFn": "max",
+          "name": "success"
+        }
+      ],
+      "timeScale": "1day",
+      "name": "Success",
+      "verticalLabel": "executions",
+      "displayPriority": 1,
+      "scale1024": false,
+      "title": "Success",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "success",
+          "color": "blue",
+          "legend": "success",
+          "isVirtual": false,
+          "type": "area"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "unknown",
+          "consolidationFn": "max",
+          "name": "unknown"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "Unknown",
+      "verticalLabel": "executions",
+      "displayPriority": 6,
+      "scale1024": false,
+      "title": "Unknown",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "unknown",
+          "color": "orange",
+          "legend": "unknown",
+          "isVirtual": false,
+          "type": "area"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "updated",
+          "consolidationFn": "max",
+          "name": "updated"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "max": 1,
+      "name": "Updates",
+      "verticalLabel": "updated",
+      "displayPriority": 3,
+      "scale1024": false,
+      "title": "Updates",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "updated",
+          "color": "orange",
+          "legend": "updated",
+          "isVirtual": false,
+          "type": "area"
+        }
+      ]
+    }
+  ],
+  "integrationMetadata": {
+    "publishedAtMS": 1749669356383,
+    "authorCompanyUuid": "21fb6c50-d653-416e-918b-fff3dcb1394c",
+    "namespace": "centretech",
+    "registryVersion": "3.2.0",
+    "name": "",
+    "checksum": "c2dd6c6270466b71d13cb03d270dab7c",
+    "registryId": "8f252265-aa2b-4ed1-bb72-b55b18317a14",
+    "isPrivate": true,
+    "locator": "WNDD34",
+    "lineageId": "2MrfxxgLS9io19K8VM9i-A",
+    "status": "SECURITY_REVIEW"
+  },
+  "name": "Rewst_Workflow_Executions",
+  "collectionInterval": "2m",
+  "dataSourceType": 1,
+  "group": "",
+  "overviewGraphs": [
+    {
+      "datapoints": [
+        {
+          "datapointName": "failure",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "failure"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "Failure",
+      "verticalLabel": "executions",
+      "displayPriority": 6,
+      "aggregated": true,
+      "scale1024": false,
+      "title": "Failure",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "failure",
+          "color": "red2",
+          "legend": "failed",
+          "isVirtual": false,
+          "type": "area"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "failure",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "failure"
+        }
+      ],
+      "timeScale": "1day",
+      "name": "Failure Per Workflow",
+      "verticalLabel": "executions",
+      "displayPriority": 2,
+      "aggregated": false,
+      "scale1024": false,
+      "title": "Failure Per Workflow",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "failure",
+          "color": "Auto",
+          "legend": "##INSTANCE##",
+          "isVirtual": false,
+          "type": "stack"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "responseTime",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "responseTime"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "LogicModule ResponseTime",
+      "verticalLabel": "ms",
+      "displayPriority": 8,
+      "aggregated": true,
+      "scale1024": false,
+      "title": "LogicModule ResponseTime",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "responseTime",
+          "color": "Auto",
+          "legend": "ResponseTime",
+          "isVirtual": false,
+          "type": "area"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "running",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "running"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "Running Per Workflow",
+      "verticalLabel": "executions",
+      "displayPriority": 11,
+      "aggregated": false,
+      "scale1024": false,
+      "title": "Running Per Workflow",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "running",
+          "color": "Auto",
+          "legend": "##INSTANCE##",
+          "isVirtual": false,
+          "type": "stack"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "seconds_saved",
+          "aggregateMethod": "sum",
+          "consolidationFn": "max",
+          "name": "seconds_saved"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "Seconds Saved",
+      "verticalLabel": "seconds",
+      "displayPriority": 7,
+      "aggregated": true,
+      "scale1024": false,
+      "title": "Seconds Saved",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "seconds_saved",
+          "color": "green",
+          "legend": "Saved",
+          "isVirtual": false,
+          "type": "area"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "seconds_saved",
+          "aggregateMethod": "sum",
+          "consolidationFn": "average",
+          "name": "seconds_saved"
+        }
+      ],
+      "timeScale": "1day",
+      "name": "Seconds Saved Per Workflow",
+      "verticalLabel": "seconds",
+      "displayPriority": 4,
+      "aggregated": false,
+      "scale1024": false,
+      "title": "Seconds Saved Per Workflow",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "seconds_saved",
+          "color": "Auto",
+          "legend": "##INSTANCE##",
+          "isVirtual": false,
+          "type": "stack"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "success",
+          "aggregateMethod": "sum",
+          "consolidationFn": "max",
+          "name": "success"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "Success",
+      "verticalLabel": "executions",
+      "displayPriority": 5,
+      "aggregated": true,
+      "scale1024": false,
+      "title": "Success",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "success",
+          "color": "blue",
+          "legend": "successful",
+          "isVirtual": false,
+          "type": "area"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "success",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "success"
+        }
+      ],
+      "timeScale": "1day",
+      "name": "Success Per Workflow",
+      "verticalLabel": "executions",
+      "displayPriority": 1,
+      "aggregated": false,
+      "scale1024": false,
+      "title": "Success Per Workflow",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "success",
+          "color": "Auto",
+          "legend": "##INSTANCE##",
+          "isVirtual": false,
+          "type": "stack"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "updated",
+          "aggregateMethod": "sum",
+          "consolidationFn": "max",
+          "name": "updated"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "Updates",
+      "verticalLabel": "workflow",
+      "displayPriority": 6,
+      "aggregated": true,
+      "scale1024": false,
+      "title": "Updates",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "updated",
+          "color": "yellow",
+          "legend": "updates",
+          "isVirtual": false,
+          "type": "area"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "updated",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "updated"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "Updates Per Workflow",
+      "verticalLabel": "updated",
+      "displayPriority": 3,
+      "aggregated": false,
+      "scale1024": false,
+      "title": "Updates Per Workflow",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "updated",
+          "color": "Auto",
+          "legend": "##INSTANCE##",
+          "isVirtual": false,
+          "type": "stack"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "is_clone",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "is_clone"
+        },
+        {
+          "datapointName": "is_local",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "is_local"
+        },
+        {
+          "datapointName": "is_synchronized",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "is_synchronized"
+        },
+        {
+          "datapointName": "not_synchronized",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "not_synchronized"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "Workflow Status",
+      "verticalLabel": "1=true;0=false",
+      "displayPriority": 8,
+      "aggregated": false,
+      "scale1024": false,
+      "title": "Workflow Status",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "is_clone",
+          "color": "Auto",
+          "legend": "##INSTANCE##",
+          "isVirtual": false,
+          "type": "stack"
+        },
+        {
+          "datapointName": "is_local",
+          "color": "Auto",
+          "legend": "##INSTANCE##",
+          "isVirtual": false,
+          "type": "stack"
+        },
+        {
+          "datapointName": "is_synchronized",
+          "color": "Auto",
+          "legend": "##INSTANCE##",
+          "isVirtual": false,
+          "type": "stack"
+        },
+        {
+          "datapointName": "not_synchronized",
+          "color": "Auto",
+          "legend": "##INSTANCE##",
+          "isVirtual": false,
+          "type": "stack"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "is_clone",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "is_clone"
+        },
+        {
+          "datapointName": "is_local",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "is_local"
+        },
+        {
+          "datapointName": "is_synchronized",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "is_synchronized"
+        },
+        {
+          "datapointName": "not_synchronized",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "not_synchronized"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "Workflow Status All",
+      "verticalLabel": "1=true;0=false",
+      "displayPriority": 8,
+      "aggregated": true,
+      "scale1024": false,
+      "title": "Workflow Status All",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "is_clone",
+          "color": "teal",
+          "legend": "is_clone",
+          "isVirtual": false,
+          "type": "stack"
+        },
+        {
+          "datapointName": "is_local",
+          "color": "green",
+          "legend": "is_local",
+          "isVirtual": false,
+          "type": "stack"
+        },
+        {
+          "datapointName": "is_synchronized",
+          "color": "purple",
+          "legend": "is_synchronized",
+          "isVirtual": false,
+          "type": "stack"
+        },
+        {
+          "datapointName": "not_synchronized",
+          "color": "orange2",
+          "legend": "not_synchronized",
+          "isVirtual": false,
+          "type": "stack"
+        }
+      ]
+    },
+    {
+      "datapoints": [
+        {
+          "datapointName": "unknown",
+          "aggregateMethod": "max",
+          "consolidationFn": "max",
+          "name": "unknown"
+        }
+      ],
+      "min": 0,
+      "timeScale": "1day",
+      "name": "unknown",
+      "verticalLabel": "executions",
+      "displayPriority": 12,
+      "aggregated": false,
+      "scale1024": false,
+      "title": "Unknown Per Workflow",
+      "rigid": false,
+      "lines": [
+        {
+          "datapointName": "unknown",
+          "color": "Auto",
+          "legend": "##INSTANCE##",
+          "isVirtual": false,
+          "type": "stack"
+        }
+      ]
+    }
+  ],
+  "headers": {
+    "cache-control": "no-cache, no-store",
+    "content-disposition": "attachment; filename=\"Rewst_Workflow_Executions.json\"",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "date": "Thu, 12 Jun 2025 18:43:53 GMT",
+    "server": "LM",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "vary": "accept-encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-server-version": "222-11",
+    "x-xss-protection": "1; mode=block"
+  }
+}
